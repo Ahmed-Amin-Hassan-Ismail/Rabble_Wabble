@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Question View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="QuestionViewController" customModule="Rabble_Wabble" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="QuestionView" customModule="Rabble_Wabble" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prompt" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gA3-KN-eal">
+                                <rect key="frame" x="0.0" y="104" width="414" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hint" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Au-af-Kuh">
+                                <rect key="frame" x="0.0" y="172" width="414" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HAu-NE-cRZ">
+                                <rect key="frame" x="0.0" y="251" width="414" height="57.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ok9-q2-RXr">
+                                <rect key="frame" x="32" y="711" width="80" height="80"/>
+                                <state key="normal" image="ic_circle_x"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J76-vJ-hLB">
+                                <rect key="frame" x="62" y="799" width="20" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" red="1" green="0.1278477311" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZL-PB-DOY">
+                                <rect key="frame" x="302" y="711" width="80" height="80"/>
+                                <state key="normal" image="ic_circle_check"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="klx-wL-KSE">
+                                <rect key="frame" x="332" y="799" width="20" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" red="0.0" green="0.60606688259999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="klx-wL-KSE" firstAttribute="centerX" secondItem="FZL-PB-DOY" secondAttribute="centerX" id="3NO-oo-Cyv"/>
+                            <constraint firstItem="HAu-NE-cRZ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="D3v-5Z-0mq"/>
+                            <constraint firstItem="5Au-af-Kuh" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="DKb-eI-Kpu"/>
+                            <constraint firstItem="J76-vJ-hLB" firstAttribute="centerX" secondItem="Ok9-q2-RXr" secondAttribute="centerX" id="I1q-cu-jQP"/>
+                            <constraint firstItem="HAu-NE-cRZ" firstAttribute="top" secondItem="5Au-af-Kuh" secondAttribute="bottom" constant="50" id="QA3-fe-rfx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FZL-PB-DOY" secondAttribute="trailing" constant="32" id="Ukx-7L-uIe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="J76-vJ-hLB" secondAttribute="bottom" constant="24" id="Vdb-ID-0bo"/>
+                            <constraint firstItem="J76-vJ-hLB" firstAttribute="top" secondItem="Ok9-q2-RXr" secondAttribute="bottom" constant="8" id="Y4g-02-ixY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="klx-wL-KSE" secondAttribute="bottom" constant="24" id="bz2-L0-xFy"/>
+                            <constraint firstItem="5Au-af-Kuh" firstAttribute="top" secondItem="gA3-KN-eal" secondAttribute="bottom" constant="8" id="hvh-VD-Tl0"/>
+                            <constraint firstItem="Ok9-q2-RXr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="o0L-VW-prF"/>
+                            <constraint firstItem="gA3-KN-eal" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rel-nI-Pbf"/>
+                            <constraint firstItem="gA3-KN-eal" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="rpJ-Fl-wcK"/>
+                            <constraint firstItem="klx-wL-KSE" firstAttribute="top" secondItem="FZL-PB-DOY" secondAttribute="bottom" constant="8" id="tIO-Vf-CA2"/>
+                            <constraint firstItem="gA3-KN-eal" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="tgo-sB-yRI"/>
+                            <constraint firstItem="HAu-NE-cRZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ugN-iS-Nw4"/>
+                            <constraint firstItem="5Au-af-Kuh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="yHc-Nz-wRX"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="answerLabel" destination="HAu-NE-cRZ" id="CPY-5c-Uvr"/>
+                            <outlet property="correctCountLabel" destination="klx-wL-KSE" id="AxZ-gF-X5N"/>
+                            <outlet property="hintLabel" destination="5Au-af-Kuh" id="CVL-tg-M4i"/>
+                            <outlet property="incorrectCountLabel" destination="J76-vJ-hLB" id="ISL-Po-g7Q"/>
+                            <outlet property="promptLabel" destination="gA3-KN-eal" id="LU5-Bp-nSe"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="70"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_circle_check" width="80" height="80"/>
+        <image name="ic_circle_x" width="80" height="80"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
