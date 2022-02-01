@@ -17,6 +17,8 @@
 		5355A49127A9B32A0069786A /* QuestionGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5355A49027A9B32A0069786A /* QuestionGroup.swift */; };
 		5355A49327A9B3550069786A /* QuestionGroupExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5355A49227A9B3550069786A /* QuestionGroupExtension.swift */; };
 		5355A49527A9B36C0069786A /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5355A49427A9B36C0069786A /* Question.swift */; };
+		5355A49727A9DB420069786A /* SelectQuestionGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5355A49627A9DB420069786A /* SelectQuestionGroupViewController.swift */; };
+		5355A49927A9DD440069786A /* QuestionGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5355A49827A9DD440069786A /* QuestionGroupCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		5355A49027A9B32A0069786A /* QuestionGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionGroup.swift; sourceTree = "<group>"; };
 		5355A49227A9B3550069786A /* QuestionGroupExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionGroupExtension.swift; sourceTree = "<group>"; };
 		5355A49427A9B36C0069786A /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		5355A49627A9DB420069786A /* SelectQuestionGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectQuestionGroupViewController.swift; sourceTree = "<group>"; };
+		5355A49827A9DD440069786A /* QuestionGroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionGroupCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,7 @@
 		5355A48B27A9B1DF0069786A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				5355A49627A9DB420069786A /* SelectQuestionGroupViewController.swift */,
 				5355A47927A9B0F60069786A /* QuestionViewController.swift */,
 			);
 			path = Controllers;
@@ -102,6 +107,7 @@
 		5355A48C27A9B1E50069786A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5355A49827A9DD440069786A /* QuestionGroupCell.swift */,
 				5355A48E27A9B2C10069786A /* QuestionView.swift */,
 				5355A48027A9B0F70069786A /* LaunchScreen.storyboard */,
 				5355A47B27A9B0F60069786A /* Main.storyboard */,
@@ -195,7 +201,9 @@
 				5355A47627A9B0F60069786A /* AppDelegate.swift in Sources */,
 				5355A49127A9B32A0069786A /* QuestionGroup.swift in Sources */,
 				5355A47827A9B0F60069786A /* SceneDelegate.swift in Sources */,
+				5355A49927A9DD440069786A /* QuestionGroupCell.swift in Sources */,
 				5355A49527A9B36C0069786A /* Question.swift in Sources */,
+				5355A49727A9DB420069786A /* SelectQuestionGroupViewController.swift in Sources */,
 				5355A49327A9B3550069786A /* QuestionGroupExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
