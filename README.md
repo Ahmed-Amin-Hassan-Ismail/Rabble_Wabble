@@ -20,7 +20,7 @@ Examples of behavioral design patterns are Delegation, Strategy and Observer.
 Examples of creational patterns are Builder, Singleton and Prototype.
 
 
-## Model-View-Controller Pattern
+## ✔️ Model-View-Controller Pattern
 
 The model-view-controller (MVC) pattern separates objects into three distinct types. Yep, you guessed it: the three types are models, views and controllers!
 <img width="1440" alt="Screen Shot 2022-02-01 at 8 45 40 PM" src="https://user-images.githubusercontent.com/82684071/152031829-294912fa-675f-456d-9bde-0d5b475403fb.png">
