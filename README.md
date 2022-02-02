@@ -25,14 +25,14 @@ Examples of creational patterns are Builder, Singleton and Prototype.
 The model-view-controller (MVC) pattern separates objects into three distinct types. Yep, you guessed it: the three types are models, views and controllers!
 <img width="1440" alt="Screen Shot 2022-02-01 at 8 45 40 PM" src="https://user-images.githubusercontent.com/82684071/152031829-294912fa-675f-456d-9bde-0d5b475403fb.png">
 
-## Delegation Pattern
+## ☀︎ Delegation Pattern
 
 The delegation pattern enables an object to use another “helper” object to provide data or perform a task rather than do the task itself. 
 
 This pattern has three parts:
 <img width="1440" alt="Screen Shot 2022-02-02 at 12 05 17 AM" src="https://user-images.githubusercontent.com/82684071/152059279-03edf9c8-f03e-45c1-8661-e51b8d1b3978.png">
 
-## Strategy Pattern
+## ☼ Strategy Pattern
 
 The strategy pattern defines a family of interchangeable objects that can be set or switched at runtime.
 
