@@ -32,3 +32,9 @@ The delegation pattern enables an object to use another “helper” object to p
 This pattern has three parts:
 <img width="1440" alt="Screen Shot 2022-02-02 at 12 05 17 AM" src="https://user-images.githubusercontent.com/82684071/152059279-03edf9c8-f03e-45c1-8661-e51b8d1b3978.png">
 
+## Strategy Pattern
+
+The strategy pattern defines a family of interchangeable objects that can be set or switched at runtime.
+
+This pattern has three parts:
+<img width="1440" alt="Screen Shot 2022-02-03 at 12 26 13 AM" src="https://user-images.githubusercontent.com/82684071/152247947-ce841d09-0be6-47cf-9f18-96af81fd2ee4.png">
