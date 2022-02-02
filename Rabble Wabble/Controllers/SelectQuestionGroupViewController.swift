@@ -37,7 +37,7 @@ class SelectQuestionGroupViewController: UIViewController {
         if segue.identifier == "SelectQuestionGroup" {
             guard let questionViewController = segue.destination as? QuestionViewController else { return }
             questionViewController.delegate = self
-            questionViewController.questionGroup = selectedQuestionGroup
+            questionViewController.questionStrategy = RandomQuestionStrategy(questionGroup: selectedQuestionGroup)
         }
     }
     
@@ -78,11 +78,11 @@ extension SelectQuestionGroupViewController: UITableViewDelegate {
 
 // MARK: - QuestionViewControllerDelegate
 extension SelectQuestionGroupViewController: QuestionViewControllerDelegate {
-    func questionViewController(_ viewController: QuestionViewController, didCancel questionGroup: QuestionGroup, at questionIndex: Int) {
+    func questionViewController(_ viewController: QuestionViewController, didCancel questionGroup: QuestionStrategy) {
         self.navigationController?.popToViewController(self, animated: true)
     }
     
-    func questionViewController(_ viewController: QuestionViewController, didComplete questionGroup: QuestionGroup) {
+    func questionViewController(_ viewController: QuestionViewController, didComplete questionGroup: QuestionStrategy) {
         self.navigationController?.popToViewController(self, animated: true)
     }
     
