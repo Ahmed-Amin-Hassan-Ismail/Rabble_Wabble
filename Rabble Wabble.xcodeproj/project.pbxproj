@@ -19,6 +19,8 @@
 		5355A49527A9B36C0069786A /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5355A49427A9B36C0069786A /* Question.swift */; };
 		5355A49727A9DB420069786A /* SelectQuestionGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5355A49627A9DB420069786A /* SelectQuestionGroupViewController.swift */; };
 		5355A49927A9DD440069786A /* QuestionGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5355A49827A9DD440069786A /* QuestionGroupCell.swift */; };
+		53617A9D27AED6FB009029B8 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53617A9C27AED6FB009029B8 /* AppSettings.swift */; };
+		53617AA127AEDD4C009029B8 /* AppSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53617AA027AEDD4C009029B8 /* AppSettingsViewController.swift */; };
 		53F45BDF27AB32DF0082DF7C /* QuestionStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F45BDE27AB32DF0082DF7C /* QuestionStrategy.swift */; };
 		53F45BE127AB33840082DF7C /* SequentialQuestionStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F45BE027AB33840082DF7C /* SequentialQuestionStrategy.swift */; };
 		53F45BE327AB34AF0082DF7C /* RandomQuestionStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F45BE227AB34AF0082DF7C /* RandomQuestionStrategy.swift */; };
@@ -39,6 +41,8 @@
 		5355A49427A9B36C0069786A /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		5355A49627A9DB420069786A /* SelectQuestionGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectQuestionGroupViewController.swift; sourceTree = "<group>"; };
 		5355A49827A9DD440069786A /* QuestionGroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionGroupCell.swift; sourceTree = "<group>"; };
+		53617A9C27AED6FB009029B8 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		53617AA027AEDD4C009029B8 /* AppSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsViewController.swift; sourceTree = "<group>"; };
 		53F45BDE27AB32DF0082DF7C /* QuestionStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionStrategy.swift; sourceTree = "<group>"; };
 		53F45BE027AB33840082DF7C /* SequentialQuestionStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequentialQuestionStrategy.swift; sourceTree = "<group>"; };
 		53F45BE227AB34AF0082DF7C /* RandomQuestionStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomQuestionStrategy.swift; sourceTree = "<group>"; };
@@ -105,6 +109,7 @@
 		5355A48B27A9B1DF0069786A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				53617AA027AEDD4C009029B8 /* AppSettingsViewController.swift */,
 				5355A49627A9DB420069786A /* SelectQuestionGroupViewController.swift */,
 				5355A47927A9B0F60069786A /* QuestionViewController.swift */,
 			);
@@ -125,6 +130,7 @@
 		5355A48D27A9B1EB0069786A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				53617A9C27AED6FB009029B8 /* AppSettings.swift */,
 				5355A49427A9B36C0069786A /* Question.swift */,
 				5355A49027A9B32A0069786A /* QuestionGroup.swift */,
 				5355A49227A9B3550069786A /* QuestionGroupExtension.swift */,
@@ -213,6 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53617A9D27AED6FB009029B8 /* AppSettings.swift in Sources */,
 				5355A48F27A9B2C10069786A /* QuestionView.swift in Sources */,
 				5355A47A27A9B0F60069786A /* QuestionViewController.swift in Sources */,
 				5355A47627A9B0F60069786A /* AppDelegate.swift in Sources */,
@@ -223,6 +230,7 @@
 				53F45BE327AB34AF0082DF7C /* RandomQuestionStrategy.swift in Sources */,
 				53F45BDF27AB32DF0082DF7C /* QuestionStrategy.swift in Sources */,
 				5355A49527A9B36C0069786A /* Question.swift in Sources */,
+				53617AA127AEDD4C009029B8 /* AppSettingsViewController.swift in Sources */,
 				5355A49727A9DB420069786A /* SelectQuestionGroupViewController.swift in Sources */,
 				5355A49327A9B3550069786A /* QuestionGroupExtension.swift in Sources */,
 			);

@@ -12,6 +12,7 @@ class SelectQuestionGroupViewController: UIViewController {
     //MARK: - Properties
     private let questionGroups = QuestionGroup.allGroups()
     private var selectedQuestionGroup: QuestionGroup!
+    private let appSettings = AppSettings.shared
     
     //MARK: - IBOutlets
     @IBOutlet weak var tableView: UITableView! {
@@ -37,7 +38,7 @@ class SelectQuestionGroupViewController: UIViewController {
         if segue.identifier == "SelectQuestionGroup" {
             guard let questionViewController = segue.destination as? QuestionViewController else { return }
             questionViewController.delegate = self
-            questionViewController.questionStrategy = RandomQuestionStrategy(questionGroup: selectedQuestionGroup)
+            questionViewController.questionStrategy = appSettings.questionStrategy(questionGroup: selectedQuestionGroup)
         }
     }
     
