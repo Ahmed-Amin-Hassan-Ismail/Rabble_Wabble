@@ -38,3 +38,13 @@ The strategy pattern defines a family of interchangeable objects that can be set
 
 This pattern has three parts:
 <img width="1440" alt="Screen Shot 2022-02-03 at 12 26 13 AM" src="https://user-images.githubusercontent.com/82684071/152247947-ce841d09-0be6-47cf-9f18-96af81fd2ee4.png">
+
+## ☽ Singleton Pattern
+
+The singleton pattern restricts a class to only one instance. Every reference to the class refers to the same underlying instance. 
+
+This pattern is extremely common in iOS app development, as Apple makes extensive use of it.
+<img width="1438" alt="Screen Shot 2022-02-05 at 5 26 29 PM" src="https://user-images.githubusercontent.com/82684071/152650718-4864f78b-4977-464a-9e27-7e1ae290fb1b.png">
+
+
+
