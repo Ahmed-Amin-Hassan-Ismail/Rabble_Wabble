@@ -22,13 +22,13 @@ class SelectQuestionGroupViewController: UIViewController {
         }
     }
     private let appSettings = AppSettings.shared
-   
+    
     
     //MARK: - IBOutlets
     @IBOutlet weak var tableView: UITableView! {
         didSet {
             tableView.tableFooterView = UIView()
-           
+            
         }
     }
     
@@ -43,10 +43,10 @@ class SelectQuestionGroupViewController: UIViewController {
         initializeTableView()
         questionGroups.forEach {
             print("\($0.title): " +
-              "correctCount \($0.score.correctCount), " +
-              "incorrectCount \($0.score.incorrectCount)"
+                  "correctCount \($0.score.correctCount), " +
+                  "incorrectCount \($0.score.incorrectCount)"
             )
-          }
+        }
     }
     
     
@@ -73,7 +73,12 @@ extension SelectQuestionGroupViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "QuestionGroupCell", for: indexPath) as! QuestionGroupCell
         let questionGroup = questionGroups[indexPath.row]
         cell.titleLabel.text = questionGroup.title
-        
+        cell.percentageSubscriber = questionGroup.score.$runningPercentage
+            .receive(on: DispatchQueue.main)
+            .map() { number in
+                return String(format: "%.0f %%", round(100 * number))
+            }
+            .assign(to: \.text, on: cell.percentageLabel)
         return cell
     }
     
