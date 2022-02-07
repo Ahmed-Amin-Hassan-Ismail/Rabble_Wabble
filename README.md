@@ -46,5 +46,10 @@ The singleton pattern restricts a class to only one instance. Every reference to
 This pattern is extremely common in iOS app development, as Apple makes extensive use of it.
 <img width="1438" alt="Screen Shot 2022-02-05 at 5 26 29 PM" src="https://user-images.githubusercontent.com/82684071/152650718-4864f78b-4977-464a-9e27-7e1ae290fb1b.png">
 
+## ☾ Memento Pattern
+
+The memento pattern allows an object to be saved and restored
+<img width="1440" alt="Screen Shot 2022-02-07 at 9 36 01 PM" src="https://user-images.githubusercontent.com/82684071/152859145-5c00b89f-3433-4e2d-bfab-df18b6315052.png">
+
 
 
