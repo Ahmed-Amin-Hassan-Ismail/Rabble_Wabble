@@ -10,9 +10,19 @@ import UIKit
 class SelectQuestionGroupViewController: UIViewController {
     
     //MARK: - Properties
-    private let questionGroups = QuestionGroup.allGroups()
-    private var selectedQuestionGroup: QuestionGroup!
+    private let questionGroupCaretaker = QuestionGroupCaretaker()
+    private var questionGroups: [QuestionGroup] {
+        return questionGroupCaretaker.questionGroups
+    }
+    private var selectedQuestionGroup: QuestionGroup! {
+        get {
+            return questionGroupCaretaker.selectedQuestionGroup
+        } set {
+            questionGroupCaretaker.selectedQuestionGroup = newValue
+        }
+    }
     private let appSettings = AppSettings.shared
+   
     
     //MARK: - IBOutlets
     @IBOutlet weak var tableView: UITableView! {
@@ -31,6 +41,12 @@ class SelectQuestionGroupViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         initializeTableView()
+        questionGroups.forEach {
+            print("\($0.title): " +
+              "correctCount \($0.score.correctCount), " +
+              "incorrectCount \($0.score.incorrectCount)"
+            )
+          }
     }
     
     
@@ -38,7 +54,7 @@ class SelectQuestionGroupViewController: UIViewController {
         if segue.identifier == "SelectQuestionGroup" {
             guard let questionViewController = segue.destination as? QuestionViewController else { return }
             questionViewController.delegate = self
-            questionViewController.questionStrategy = appSettings.questionStrategy(questionGroup: selectedQuestionGroup)
+            questionViewController.questionStrategy = appSettings.questionStrategy(for: questionGroupCaretaker)
         }
     }
     

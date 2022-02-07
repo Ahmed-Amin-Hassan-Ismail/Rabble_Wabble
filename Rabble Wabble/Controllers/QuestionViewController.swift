@@ -63,7 +63,8 @@ class QuestionViewController: UIViewController {
         let question = questionStrategy.currentQuestion()
         questionStrategy.markQuestionCorrect(question)
         
-        questionView.correctCountLabel.text = "\(questionStrategy.correctCount)"
+        questionView.correctCountLabel.text =
+        String(questionStrategy.correctCount)
         showNextQuestion()
     }
     

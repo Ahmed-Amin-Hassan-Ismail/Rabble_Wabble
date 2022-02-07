@@ -9,8 +9,14 @@ import Foundation
 
 
 
-struct Question {
-  public let answer: String
-  public let hint: String?
-  public let prompt: String
+class Question: Codable {
+  let answer: String
+  let hint: String?
+  let prompt: String
+    
+    init(answer: String, hint: String?, prompt: String) {
+        self.answer = answer
+        self.hint = hint
+        self.prompt = prompt
+    }
 }

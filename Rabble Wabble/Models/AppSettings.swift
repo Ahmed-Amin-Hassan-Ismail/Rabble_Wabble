@@ -31,12 +31,12 @@ class AppSettings {
             }
         }
         
-        func questionStrategy(for questionGroup: QuestionGroup) -> QuestionStrategy {
+        func questionStrategy(for questionGroupCaretaker: QuestionGroupCaretaker) -> QuestionStrategy {
             switch self {
             case .random:
-                return RandomQuestionStrategy(questionGroup: questionGroup)
+                return RandomQuestionStrategy(questionGroupCaretaker: questionGroupCaretaker)
             case .sequental:
-                return SequentialQuestionStrategy(questionGroup: questionGroup)
+                return SequentialQuestionStrategy(questionGroupCaretaker: questionGroupCaretaker)
             }
         }
     }
@@ -56,8 +56,8 @@ class AppSettings {
     private init() { }
     
     
-    func questionStrategy(questionGroup: QuestionGroup) -> QuestionStrategy {
-        return questionStrategyType.questionStrategy(for: questionGroup)
+    func questionStrategy(for questionGroupCaretaker: QuestionGroupCaretaker) -> QuestionStrategy {
+        return questionStrategyType.questionStrategy(for: questionGroupCaretaker)
     }
     
     
