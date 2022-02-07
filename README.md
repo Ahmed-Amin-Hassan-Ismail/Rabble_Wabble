@@ -22,7 +22,9 @@ Examples of creational patterns are Builder, Singleton and Prototype.
 
 ## ✔️ Model-View-Controller Pattern
 
-The model-view-controller (MVC) pattern separates objects into three distinct types. Yep, you guessed it: the three types are models, views and controllers!
+The model-view-controller (MVC) pattern separates objects into three distinct types. Yep, you guessed it 
+
+the three types are models, views and controllers!
 <img width="1440" alt="Screen Shot 2022-02-01 at 8 45 40 PM" src="https://user-images.githubusercontent.com/82684071/152031829-294912fa-675f-456d-9bde-0d5b475403fb.png">
 
 ## ☀︎ Delegation Pattern
@@ -49,6 +51,8 @@ This pattern is extremely common in iOS app development, as Apple makes extensiv
 ## ☾ Memento Pattern
 
 The memento pattern allows an object to be saved and restored
+
+This pattern has three parts:
 <img width="1440" alt="Screen Shot 2022-02-07 at 9 36 01 PM" src="https://user-images.githubusercontent.com/82684071/152859145-5c00b89f-3433-4e2d-bfab-df18b6315052.png">
 
 
