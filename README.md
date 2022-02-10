@@ -55,5 +55,9 @@ The memento pattern allows an object to be saved and restored
 This pattern has three parts:
 <img width="1440" alt="Screen Shot 2022-02-07 at 9 36 01 PM" src="https://user-images.githubusercontent.com/82684071/152859145-5c00b89f-3433-4e2d-bfab-df18b6315052.png">
 
+## ☂︎ Builder Pattern
 
+The builder pattern allows you to create complex objects by providing inputs step-by-step, instead of requiring all inputs upfront via an initializer
 
+This pattern involves three main types:
+<img width="1440" alt="Screen Shot 2022-02-09 at 6 55 12 PM" src="https://user-images.githubusercontent.com/82684071/153490893-fd1dbb11-6fbc-4bb8-8e96-3cd871fdb3c7.png">
