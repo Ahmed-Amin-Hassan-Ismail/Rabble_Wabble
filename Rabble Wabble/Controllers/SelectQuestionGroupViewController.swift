@@ -51,11 +51,19 @@ class SelectQuestionGroupViewController: UIViewController {
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "SelectQuestionGroup" {
-            guard let questionViewController = segue.destination as? QuestionViewController else { return }
-            questionViewController.delegate = self
-            questionViewController.questionStrategy = appSettings.questionStrategy(for: questionGroupCaretaker)
-        }
+        
+        if let viewController =
+            segue.destination as? QuestionViewController {
+            viewController.questionStrategy =
+            appSettings.questionStrategy(for: questionGroupCaretaker)
+            viewController.delegate = self
+            
+        } else if let navController =
+                    segue.destination as? UINavigationController,
+                  let viewController =
+                    navController.topViewController as? CreateQuestionGroupViewController {
+            viewController.delegate = self
+        }        
     }
     
 }
@@ -106,6 +114,22 @@ extension SelectQuestionGroupViewController: QuestionViewControllerDelegate {
     
     func questionViewController(_ viewController: QuestionViewController, didComplete questionGroup: QuestionStrategy) {
         self.navigationController?.popToViewController(self, animated: true)
+    }
+    
+    
+}
+
+//MARK: - CreateQuestionGroupViewControllerDelegate
+extension SelectQuestionGroupViewController: CreateQuestionGroupViewControllerDelegate {
+    func createQuestionGroupViewControllerDidCancel(_ viewController: CreateQuestionGroupViewController) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    func createQuestionGroupViewController(_ viewController: CreateQuestionGroupViewController, created questionGroup: QuestionGroup) {
+        questionGroupCaretaker.questionGroups.append(questionGroup)
+        try? questionGroupCaretaker.save()
+        dismiss(animated: true, completion: nil)
+        tableView.reloadData()
     }
     
     
